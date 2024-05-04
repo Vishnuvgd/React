@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
 import Todo from "./component/Todo";
-import Newone from "./component/Newone";
-import Forms from "./component/Forms";
+/*import Newone from "./component/Newone";
+import Forms from "./component/Forms";*/
+import List from "./component/List";
 class App extends Component {
   state = {
     mystring: "hello",
@@ -21,9 +22,11 @@ class App extends Component {
         <Todo sendingdata={this.state.mystringone} />
         <Todo sending={this.state.mystring} />
         <hr></hr>
-        <Newone />
+        {/*<Newone />
         <hr></hr>
-        <Forms />
+        <Forms />*/}
+        <h2>List component</h2>
+        <List />
       </div>
     );
   }
